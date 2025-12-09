@@ -3,6 +3,10 @@
 
 AgentFlow automates the transformation of raw educational material into structured learning assets. Instead of manually reading and creating quizzes, this engine processes PDFs to automatically generate **summaries** and **multiple-choice quizzes**.
 
+## Architecture Diagram
+![AgentFlow Architecture](docs/architecture.png)
+
+
 **How it Works**
 The system is an intelligent workflow engine powered by LLMs:
 1.  **Ingest**: Uses `pdf_reader` tools to extract text from uploaded documents.
@@ -33,6 +37,3 @@ The system is an intelligent workflow engine powered by LLMs:
 *   **Execution**: `POST /run-workflow` - Trigger the AI pipeline.
 
 Interactive documentation available at: `http://localhost:8000/docs`
-
-**Architecture Diagram**
-![AgentFlow Architecture](architecture.png)
