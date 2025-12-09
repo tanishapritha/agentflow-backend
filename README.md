@@ -4,7 +4,7 @@
 AgentFlow automates the transformation of raw educational material into structured learning assets. Instead of manually reading and creating quizzes, this engine processes PDFs to automatically generate **summaries** and **multiple-choice quizzes**.
 
 ## Architecture Diagram
-![AgentFlow Architecture](docs/architecture.png)
+![AgentFlow Architecture](architecture.png)
 
 
 **How it Works**
