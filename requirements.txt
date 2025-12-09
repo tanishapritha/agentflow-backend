@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+pydantic-settings
+pyyaml
+openai
+jinja2
+python-dotenv
+tiktoken
+pdfplumber
+pytest
+pytest-asyncio
+httpx

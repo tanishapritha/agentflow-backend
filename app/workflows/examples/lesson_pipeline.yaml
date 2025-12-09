@@ -1,0 +1,23 @@
+id: lesson_auto_pipeline
+name: Lesson → Summary → Quiz
+description: Extracts text from a PDF, summarizes it, and generates a quiz.
+
+steps:
+  - id: extract
+    type: tool
+    name: pdf_reader
+    inputs: 
+      pdf_path: "{{ inputs.lesson_pdf_path }}"
+
+  - id: summarize
+    type: agent
+    name: tutor_agent
+    task: summarize
+    inputs:
+      text_content: "{{ steps.extract.output }}"
+
+  - id: quiz
+    type: tool
+    name: quiz_generator
+    inputs:
+      text_content: "{{ steps.summarize.output }}"
